@@ -75,9 +75,9 @@ http://YOUR-SERVER-PUBLIC-IP:8080
  2.  Find this $JENKINS_USER and change to “root”:
  	$JENKINS_USER="root"
  3. Then change the ownership of Jenkins home, webroot and logs:
- 	chown -R root:root /var/lib/jenkins
-	chown -R root:root /var/cache/jenkins
-	chown -R root:root /var/log/jenkins
+ chown -R root:root /var/lib/jenkins
+ chown -R root:root /var/cache/jenkins
+ chown -R root:root /var/log/jenkins
  4. Restart Jenkins and check the user has been changed:
  	service jenkins restart
 	ps -ef | grep jenkins
